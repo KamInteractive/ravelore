@@ -14,7 +14,8 @@
   }
 
   function show(lang) {
-    sections.forEach(function (s) { s.hidden = s.id !== lang })
+    // A block names its language in data-lang-section, or falls back to its id.
+    sections.forEach(function (s) { s.hidden = (s.getAttribute('data-lang-section') || s.id) !== lang })
     buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)) })
     document.documentElement.lang = lang
     try { localStorage.setItem('ravelore-lang', lang) } catch (e) {}

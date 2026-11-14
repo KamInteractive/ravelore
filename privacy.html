@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy | RaveLore</title>
   <meta name="description" content="Privacy Policy for RaveLore, an AI roleplay and storytelling app by Kam Interactive.">
-  <link rel="icon" href="assets/icon.jpg">
+  <link rel="icon" href="assets/icon-192.jpg">
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
   <div class="container">
     <header class="site-header">
-      <a class="brand" href="index.html"><img src="assets/icon.jpg" alt="" width="36" height="36"><span>RaveLore</span></a>
+      <a class="brand" href="index.html"><img src="assets/icon-192.jpg" alt="" width="36" height="36"><span>RaveLore</span></a>
       <nav class="lang-nav" aria-label="Language">
         <button type="button" class="lang-btn" data-lang="en">English</button>
         <button type="button" class="lang-btn" data-lang="tr">Türkçe</button>
@@ -104,11 +104,19 @@
       </section>
     </main>
     <footer class="site-footer">
-      <nav>
+      <nav data-lang-section="en" lang="en">
         <a href="index.html">Home</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="delete-account.html">Delete account</a>
+        <a href="reset-password.html">Reset password</a>
+      </nav>
+      <nav data-lang-section="tr" lang="tr" hidden>
+        <a href="index.html">Ana sayfa</a>
+        <a href="privacy.html">Gizlilik</a>
+        <a href="terms.html">Koşullar</a>
+        <a href="delete-account.html">Hesap silme</a>
+        <a href="reset-password.html">Şifre sıfırlama</a>
       </nav>
       <p>&copy; 2026 Kam Interactive</p>
     </footer>
